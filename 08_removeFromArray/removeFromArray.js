@@ -1,14 +1,13 @@
 const removeFromArray = function(array = [], number) {
-    const newArray = [];
     for (let i=0; i< array.length; i++) {
         if (array[i] == number) {
-            continue;
+            array.splice(i,1);
         }
         else if(array[i] != number) {
-            newArray.push(array[i]);
+            continue;
         }
     }
-    return newArray;
+    return array;
 };
 
 // Do not edit below this line
