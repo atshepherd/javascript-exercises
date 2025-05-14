@@ -1,4 +1,4 @@
-const removeFromArray = function(array = [], number) {
+const removeFromArray = function(array = []) {
         
     for(j=1; j<arguments.length; j++) {
         for (let i=0; i<array.length; i++) {
@@ -9,7 +9,7 @@ const removeFromArray = function(array = [], number) {
                 continue;
             }
         }
-        }
+    }
     return array;
 };
 
