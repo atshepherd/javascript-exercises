@@ -2,7 +2,7 @@ const sumAll = function(firstNumber, lastNumber) {
     let sum = firstNumber;
     for (i=firstNumber; i<lastNumber; i++) {
         let nextNumber = i + 1;
-        sum += nextNumber; 
+        sum += nextNumber;
     }
         return sum;
 };
