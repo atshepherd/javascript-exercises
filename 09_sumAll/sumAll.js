@@ -1,9 +1,8 @@
-const sumAll = function(firstNumber, secondNumber) {
-    let sum = 0;
-    
-    for (i=firstNumber; i<=secondNumber; i++) {
-        let nextNumber = firstNumber++;
-        sum = firstNumber + nextNumber;
+const sumAll = function(firstNumber, lastNumber) {
+    let sum = firstNumber;
+    for (i=firstNumber; i<lastNumber; i++) {
+        let nextNumber = i + 1;
+        sum += nextNumber; 
     }
         return sum;
 };
