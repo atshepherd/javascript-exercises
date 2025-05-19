@@ -12,7 +12,3 @@ const leapYears = function(year) {
 
 // Do not edit below this line
 module.exports = leapYears;
-
-// has to be divisible by 4
-// and not divisible by 100
-// if divisible by 100 must also be divisible by 400
