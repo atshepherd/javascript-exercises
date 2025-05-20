@@ -9,3 +9,7 @@ function camelize(str) {
     // join the array into a string and return it
     return splitArr.join("");
 }
+
+module.exports = {
+    camelize
+};
