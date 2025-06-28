@@ -9,7 +9,8 @@ let mary = { name: "Mary", surname: "Key", id: 3 };
 let users = [ john, pete, mary ];
 
 
-let usersMapped = users.map(({ id, value }) => ({ ["id"]: id }));
+let usersMapped = users.map(({id, name, surname}) => ({fullName: name + " " + surname, id: id}));
+
 
 /*
 usersMapped = [
@@ -19,7 +20,5 @@ usersMapped = [
 ]
 */
 alert(usersMapped);
-// alert( usersMapped[0].fullName ) // John Smith
+alert( usersMapped[0].fullName ) // John Smith
 alert( usersMapped[0].id ) // 1
-
-// let usersMapped = users.map(item => (item.name + " " + item.surname))
