@@ -7,7 +7,10 @@ In this task we assume that id is unique. There may be no two array items with t
 Please use array .reduce method in the solution. */
 
 function groupById(users) {
-    
+    return users.reduce((acc,user) => {
+        acc[user.id] = user;
+        return acc;
+    }, {});
 }
 
 let users = [
