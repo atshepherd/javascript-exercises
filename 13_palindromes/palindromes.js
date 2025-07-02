@@ -1,10 +1,9 @@
 const palindromes = function (string) {
     let arr = [];
-    newString = string.toLowerCase();
+    let spliceString = string.replace(/[,.!\s]/g, "");
+    console.log(spliceString);
+    let newString = spliceString.toLowerCase();
     for (i=0; i<newString.length; i++) {
-        if(newString[i] == "!" || newString[i] == "." || newString[i] == "?") {
-        continue;
-        }
         arr[i] = newString[i];
     }
     let reverseArr=[];
