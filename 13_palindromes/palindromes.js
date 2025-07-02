@@ -1,10 +1,11 @@
 const palindromes = function (string) {
     let arr = [];
-    for (i=0; i<string.length; i++) {
-        if(string[i] == "!" || string [i] == "." || string[i] == "?") {
+    newString = string.toLowerCase();
+    for (i=0; i<newString.length; i++) {
+        if(newString[i] == "!" || newString[i] == "." || newString[i] == "?") {
         continue;
         }
-        arr[i] = string[i];
+        arr[i] = newString[i];
     }
     let reverseArr=[];
     j = 0;
